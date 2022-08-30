@@ -14,7 +14,7 @@ except:
     cp.log('Paste radsecproxy.conf into Hotspot TOS - /config/hotspot/tox/text')
 
 # Get certs from config/certmgmt/certs
-certs = cp.get('config/certmgmt/certs')
+certs = cp.decrypt('config/certmgmt/certs')
 found = {"cert": False, "key": False, "CA": False}
 for cert in certs:
     if 'Zscaler' not in cert["name"]:
