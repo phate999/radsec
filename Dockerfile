@@ -2,7 +2,7 @@
 FROM alpine:3.14.3 as build
 
 # Maintainer
-LABEL maintainer="Björn Gernert <mail@bjoern-gernert.de>"
+LABEL maintainer="Alex Terrell <phate999@gmail.com>"
 
 ENV RADSECVERSION 1.9.1
 ENV RADSECURL https://github.com/radsecproxy/radsecproxy/releases/download/${RADSECVERSION}/
